@@ -66,13 +66,13 @@ static char BGImageDirPathKey;
 
 - (void)sd_setImageWithURL:(NSURL *)url placeholderImage:(UIImage *)placeholder options:(SDWebImageOptions)options progress:(SDWebImageDownloaderProgressBlock)progressBlock completed:(SDWebImageCompletionBlock)completedBlock {
     //重构动态图部分代码,解决显示动态图内存急剧飙升的问题
-    if ([[url absoluteString] containsString:@".gif"]){
-        __weak __typeof(self)BGSelf = self;
-        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-            [BGSelf loadGif:[url absoluteString]];
-        });
-        return;
-    }
+//    if ([[url absoluteString] containsString:@".gif"]){
+//        __weak __typeof(self)BGSelf = self;
+//        dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+//            [BGSelf loadGif:[url absoluteString]];
+//        });
+//        return;
+//    }
     
     [self sd_cancelCurrentImageLoad];
     objc_setAssociatedObject(self, &imageURLKey, url, OBJC_ASSOCIATION_RETAIN_NONATOMIC);

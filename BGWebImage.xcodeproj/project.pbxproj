@@ -34,8 +34,6 @@
 		D778EF941D921E6A00B903DC /* DynamicNetConCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D778EF921D921E6A00B903DC /* DynamicNetConCell.m */; };
 		D778EF951D921E6A00B903DC /* DynamicNetConCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D778EF931D921E6A00B903DC /* DynamicNetConCell.xib */; };
 		D778EFA01D921F5500B903DC /* global.m in Sources */ = {isa = PBXBuildFile; fileRef = D778EF9F1D921F5500B903DC /* global.m */; };
-		D778EFA61D92654D00B903DC /* YLGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = D778EFA31D92654D00B903DC /* YLGIFImage.m */; };
-		D778EFA71D92654D00B903DC /* YLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D778EFA51D92654D00B903DC /* YLImageView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,10 +108,6 @@
 		D778EF931D921E6A00B903DC /* DynamicNetConCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DynamicNetConCell.xib; sourceTree = "<group>"; };
 		D778EF9E1D921F5500B903DC /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = global.h; sourceTree = "<group>"; };
 		D778EF9F1D921F5500B903DC /* global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = global.m; sourceTree = "<group>"; };
-		D778EFA21D92654D00B903DC /* YLGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLGIFImage.h; sourceTree = "<group>"; };
-		D778EFA31D92654D00B903DC /* YLGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLGIFImage.m; sourceTree = "<group>"; };
-		D778EFA41D92654D00B903DC /* YLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YLImageView.h; sourceTree = "<group>"; };
-		D778EFA51D92654D00B903DC /* YLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YLImageView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,7 +206,6 @@
 		D778EF5F1D921D7800B903DC /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
-				D778EFA11D92654D00B903DC /* YLGIFImage */,
 				D778EF601D921D7800B903DC /* MKAnnotationView+WebCache.h */,
 				D778EF611D921D7800B903DC /* MKAnnotationView+WebCache.m */,
 				D778EF621D921D7800B903DC /* NSData+ImageContentType.h */,
@@ -248,17 +241,6 @@
 				D778EF801D921D7800B903DC /* UIView+WebCacheOperation.m */,
 			);
 			path = SDWebImage;
-			sourceTree = "<group>";
-		};
-		D778EFA11D92654D00B903DC /* YLGIFImage */ = {
-			isa = PBXGroup;
-			children = (
-				D778EFA21D92654D00B903DC /* YLGIFImage.h */,
-				D778EFA31D92654D00B903DC /* YLGIFImage.m */,
-				D778EFA41D92654D00B903DC /* YLImageView.h */,
-				D778EFA51D92654D00B903DC /* YLImageView.m */,
-			);
-			path = YLGIFImage;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -399,12 +381,10 @@
 				D778EF861D921D7800B903DC /* SDWebImageDownloader.m in Sources */,
 				D778EF8D1D921D7800B903DC /* UIImage+WebP.m in Sources */,
 				D778EF901D921D7800B903DC /* UIView+WebCacheOperation.m in Sources */,
-				D778EFA61D92654D00B903DC /* YLGIFImage.m in Sources */,
 				D778EF831D921D7800B903DC /* SDImageCache.m in Sources */,
 				D778EFA01D921F5500B903DC /* global.m in Sources */,
 				D778EF341D921D1A00B903DC /* ViewController.m in Sources */,
 				D778EF811D921D7800B903DC /* MKAnnotationView+WebCache.m in Sources */,
-				D778EFA71D92654D00B903DC /* YLImageView.m in Sources */,
 				D778EF851D921D7800B903DC /* SDWebImageDecoder.m in Sources */,
 				D778EF8C1D921D7800B903DC /* UIImage+MultiFormat.m in Sources */,
 				D778EF871D921D7800B903DC /* SDWebImageDownloaderOperation.m in Sources */,
