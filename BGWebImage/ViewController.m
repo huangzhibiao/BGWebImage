@@ -9,11 +9,14 @@
 #import "ViewController.h"
 #import "DynamicNetConCell.h"
 #import "global.h"
+#import <objc/runtime.h>
 
 @interface ViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property(nonatomic,weak)UICollectionView* goodShowView;//表情展示
 @property(nonatomic,strong)NSArray* datas;
+
+@property(nonatomic,weak)NSString* weak_str;
 
 @end
 
@@ -25,6 +28,16 @@ static NSString* GOCELLID = @"DynamicNetConCell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self initGoodShowView];
+}
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSLog(@"%@",_weak_str);
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+    NSLog(@"%@",_weak_str);
 }
 
 -(NSArray *)datas{

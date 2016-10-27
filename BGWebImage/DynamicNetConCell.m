@@ -41,6 +41,5 @@
 -(void)setImage:(NSString *)image{
     _image = image;
     [self.icon sd_setImageWithURL:[NSURL URLWithString:image] placeholderImage:nil];
-    
 }
 @end
